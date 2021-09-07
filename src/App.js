@@ -1,23 +1,37 @@
 import React from 'react';
 import './index.css';
 
+const Button = () => {
+  const btnStyle = {
+    background: '#2C9FD0',
+    color: '#fff',
+    outline: 'none',
+    border: 'none',
+    padding: '12px 20px',
+    borderRadius: '5px',
+    width: '100%'
+  }
+
+  return (
+    <button style={btnStyle}>Contact</button>
+  );
+}
+
 const Person = ({img, name, job, children}) => {
   // const url = (`https://randomuser.me/api/portraits/men/${img}.jpg`)
   const url = (`https://picsum.photos/200/300?random=${img}`)
-
 
   return (
     <div className="card">
       <img src={url} alt={`Person ${name}`} className="card-avatar"/>
       <div className="card-body">
         <h3>{name}</h3>
-        <h5>{job}</h5>
         {children}
+        <Button />
       </div>
     </div>
   );
 }
-
 
 function PersonCard() {
   return (

@@ -52,3 +52,24 @@ h3 {
   font-weight: 500;
   color: #272727;
 }
+
+h5 {
+  font-weight: 500;
+  color: #fff;
+  max-width: max-content;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+.set1 {
+  background: #AF7AC5;
+}
+
+.set2 {
+  background: #2E4053;
+}
+
+.set3 {
+  background: #E67E22;
+}
+
