@@ -9,7 +9,10 @@ const Button = () => {
     border: 'none',
     padding: '12px 20px',
     borderRadius: '5px',
-    width: '100%'
+    width: '100%',
+    cursor: 'pointer',
+    fontSize: '15px',
+    fontWeight: '600'
   }
 
   return (
@@ -17,7 +20,7 @@ const Button = () => {
   );
 }
 
-const Person = ({img, name, job, children}) => {
+const Person = ({img, name, children, job}) => {
   // const url = (`https://randomuser.me/api/portraits/men/${img}.jpg`)
   const url = (`https://picsum.photos/200/300?random=${img}`)
 
@@ -26,6 +29,7 @@ const Person = ({img, name, job, children}) => {
       <img src={url} alt={`Person ${name}`} className="card-avatar"/>
       <div className="card-body">
         <h3>{name}</h3>
+        <h5>{job}</h5>
         {children}
         <Button />
       </div>

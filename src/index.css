@@ -55,10 +55,13 @@ h3 {
 
 h5 {
   font-weight: 500;
+  font-size: 10px;
   color: #fff;
+  background: #AF7AC5;
   max-width: max-content;
   padding: 5px 15px;
   border-radius: 50px;
+  margin: 10px 0 20px 0;
 }
 
 .set1 {
@@ -73,3 +76,6 @@ h5 {
   background: #E67E22;
 }
 
+p {
+  margin: 5px 0 20px;
+}
