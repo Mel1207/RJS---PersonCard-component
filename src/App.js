@@ -20,12 +20,12 @@ const Button = () => {
   );
 }
 
-const Person = ({img, name, children, job}) => {
+const Person = ({img, name, children, job, set}) => {
   // const url = (`https://randomuser.me/api/portraits/men/${img}.jpg`)
   const url = (`https://picsum.photos/200/300?random=${img}`)
 
   return (
-    <div className="card">
+    <div className="card" id={set}>
       <img src={url} alt={`Person ${name}`} className="card-avatar"/>
       <div className="card-body">
         <h3>{name}</h3>
@@ -41,13 +41,13 @@ function PersonCard() {
   return (
     <div className="App">
       <section>
-        <Person img="15" name="John Orton" job="Backend developer">
+        <Person img="15" name="John Orton" job="Backend developer" set="set-1">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores officia excepturi at autem minus quas atque officiis maxime quidem ad.</p>
         </Person>
-        <Person img="75" name="Mel Dimitry" job="Frontend developer">
+        <Person img="75" name="Mel Dimitry" job="Frontend developer" set="set-2">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores officia excepturi at autem minus quas atque officiis maxime quidem ad.</p>
         </Person>
-        <Person img="50" name="Jack Nolan" job="Fullstack developer">
+        <Person img="50" name="Jack Nolan" job="Fullstack developer" set="set-3">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores officia excepturi at autem minus quas atque officiis maxime quidem ad.</p>
         </Person>
       </section>

@@ -23,6 +23,10 @@ body {
 }
 
 section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -36,6 +40,7 @@ section {
   width: 330px;
   height: auto;
   border-radius: 10px;
+  box-shadow: 7px 11px 41px 10px rgba(0, 0, 0, 0.03);
 }
 
 .card-avatar {
@@ -61,21 +66,22 @@ h5 {
   max-width: max-content;
   padding: 5px 15px;
   border-radius: 50px;
-  margin: 10px 0 20px 0;
+  margin: 5px 0 20px 0;
 }
 
-.set1 {
+#set-1 h5 {
   background: #AF7AC5;
 }
 
-.set2 {
+#set-2 h5 {
   background: #2E4053;
 }
 
-.set3 {
+#set-3 h5 {
   background: #E67E22;
 }
 
 p {
   margin: 5px 0 20px;
+  font-size: 13px;
 }
