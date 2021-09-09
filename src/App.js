@@ -22,7 +22,7 @@ const Button = () => {
 
 const Person = ({img, name, children, job, set}) => {
   // const url = (`https://randomuser.me/api/portraits/men/${img}.jpg`)
-  const url = (`https://picsum.photos/200/300?random=${img}`)
+  const url = (`https://picsum.photos/300/200?random=${img}`)
 
   return (
     <div className="card" id={set}>
